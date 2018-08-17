@@ -1,14 +1,14 @@
 //
-//  TabBarController.swift
+//  SpeedTabViewController.swift
 //  UintConverter
 //
-//  Created by Tharindu Perera on 8/15/18.
+//  Created by Tharindu Perera on 8/17/18.
 //  Copyright © 2018 Tharindu Perera. All rights reserved.
 //
 
 import UIKit
 
-class TabBarController: UITabBarController {
+class SpeedTabViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

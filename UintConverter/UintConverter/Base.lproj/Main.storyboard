@@ -12,7 +12,7 @@
         <!--Speed-->
         <scene sceneID="nHx-UP-1je">
             <objects>
-                <viewController id="AFL-G1-yhO" sceneMemberID="viewController">
+                <viewController id="AFL-G1-yhO" customClass="SpeedTabViewController" customModule="UintConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ulq-wB-R8i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Temperature-->
         <scene sceneID="TAB-cR-Ny3">
             <objects>
-                <viewController id="tvq-y2-kVp" sceneMemberID="viewController">
+                <viewController id="tvq-y2-kVp" customClass="TemperatureTabViewController" customModule="UintConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LyH-C2-CFK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,7 +232,7 @@
         <!--Distance-->
         <scene sceneID="jYB-Es-FVa">
             <objects>
-                <viewController id="Lzm-Ah-2Vc" sceneMemberID="viewController">
+                <viewController id="Lzm-Ah-2Vc" customClass="DistanceTabViewController" customModule="UintConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pzc-ZL-raZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -372,7 +372,7 @@
         <!--Weight-->
         <scene sceneID="iYG-C9-N9V">
             <objects>
-                <viewController id="CcH-yb-9Wy" sceneMemberID="viewController">
+                <viewController id="CcH-yb-9Wy" customClass="WeightTabViewController" customModule="UintConverter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lu0-BL-U8f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

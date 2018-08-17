@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8132FAD221272F66000CA227 /* WeightTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD121272F66000CA227 /* WeightTabViewController.swift */; };
+		8132FAD421272F84000CA227 /* TemperatureTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD321272F84000CA227 /* TemperatureTabViewController.swift */; };
+		8132FAD621272F97000CA227 /* DistanceTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD521272F97000CA227 /* DistanceTabViewController.swift */; };
+		8132FAD821272FA2000CA227 /* SpeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */; };
 		81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFA83521248D3800E1380E /* AppDelegate.swift */; };
 		81FFA83B21248D3800E1380E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83921248D3800E1380E /* Main.storyboard */; };
 		81FFA83D21248D3900E1380E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83C21248D3900E1380E /* Assets.xcassets */; };
 		81FFA84021248D3900E1380E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83E21248D3900E1380E /* LaunchScreen.storyboard */; };
-		81FFA8482124932700E1380E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFA8472124932700E1380E /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8132FAD121272F66000CA227 /* WeightTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTabViewController.swift; sourceTree = "<group>"; };
+		8132FAD321272F84000CA227 /* TemperatureTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTabViewController.swift; sourceTree = "<group>"; };
+		8132FAD521272F97000CA227 /* DistanceTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTabViewController.swift; sourceTree = "<group>"; };
+		8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTabViewController.swift; sourceTree = "<group>"; };
 		81FFA83221248D3800E1380E /* UintConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UintConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FFA83521248D3800E1380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FFA83A21248D3800E1380E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81FFA83C21248D3900E1380E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81FFA83F21248D3900E1380E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81FFA84121248D3900E1380E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81FFA8472124932700E1380E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				81FFA83C21248D3900E1380E /* Assets.xcassets */,
 				81FFA83E21248D3900E1380E /* LaunchScreen.storyboard */,
 				81FFA84121248D3900E1380E /* Info.plist */,
-				81FFA8472124932700E1380E /* TabBarController.swift */,
+				8132FAD121272F66000CA227 /* WeightTabViewController.swift */,
+				8132FAD321272F84000CA227 /* TemperatureTabViewController.swift */,
+				8132FAD521272F97000CA227 /* DistanceTabViewController.swift */,
+				8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */,
 			);
 			path = UintConverter;
 			sourceTree = "<group>";
@@ -135,8 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8132FAD221272F66000CA227 /* WeightTabViewController.swift in Sources */,
+				8132FAD421272F84000CA227 /* TemperatureTabViewController.swift in Sources */,
 				81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */,
-				81FFA8482124932700E1380E /* TabBarController.swift in Sources */,
+				8132FAD821272FA2000CA227 /* SpeedTabViewController.swift in Sources */,
+				8132FAD621272F97000CA227 /* DistanceTabViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
