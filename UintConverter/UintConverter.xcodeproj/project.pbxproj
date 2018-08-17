@@ -11,6 +11,7 @@
 		8132FAD421272F84000CA227 /* TemperatureTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD321272F84000CA227 /* TemperatureTabViewController.swift */; };
 		8132FAD621272F97000CA227 /* DistanceTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD521272F97000CA227 /* DistanceTabViewController.swift */; };
 		8132FAD821272FA2000CA227 /* SpeedTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */; };
+		8132FADE21273860000CA227 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FADD21273860000CA227 /* Extensions.swift */; };
 		81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFA83521248D3800E1380E /* AppDelegate.swift */; };
 		81FFA83B21248D3800E1380E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83921248D3800E1380E /* Main.storyboard */; };
 		81FFA83D21248D3900E1380E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83C21248D3900E1380E /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		8132FAD321272F84000CA227 /* TemperatureTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureTabViewController.swift; sourceTree = "<group>"; };
 		8132FAD521272F97000CA227 /* DistanceTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceTabViewController.swift; sourceTree = "<group>"; };
 		8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTabViewController.swift; sourceTree = "<group>"; };
+		8132FADD21273860000CA227 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		81FFA83221248D3800E1380E /* UintConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UintConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FFA83521248D3800E1380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FFA83A21248D3800E1380E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				8132FAD321272F84000CA227 /* TemperatureTabViewController.swift */,
 				8132FAD521272F97000CA227 /* DistanceTabViewController.swift */,
 				8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */,
+				8132FADD21273860000CA227 /* Extensions.swift */,
 			);
 			path = UintConverter;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8132FAD221272F66000CA227 /* WeightTabViewController.swift in Sources */,
+				8132FADE21273860000CA227 /* Extensions.swift in Sources */,
 				8132FAD421272F84000CA227 /* TemperatureTabViewController.swift in Sources */,
 				81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */,
 				8132FAD821272FA2000CA227 /* SpeedTabViewController.swift in Sources */,
