@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TemperatureTabViewController: UITabBarController {
+class TemperatureTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

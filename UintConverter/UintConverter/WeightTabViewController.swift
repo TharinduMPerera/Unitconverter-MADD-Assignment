@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeightTabViewController: UITabBarController {
+class WeightTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

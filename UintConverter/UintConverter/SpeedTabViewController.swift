@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpeedTabViewController: UITabBarController {
+class SpeedTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

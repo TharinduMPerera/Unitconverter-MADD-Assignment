@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DistanceTabViewController: UITabBarController {
+class DistanceTabViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
