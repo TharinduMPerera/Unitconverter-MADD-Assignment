@@ -12,57 +12,57 @@ class WeightUtil {
     
     //MARK: Convert Gram
     
-    func gramToKilogram(_ gram: Int) -> Double {
-        return Double(gram) * 0.001
+    func gramToKilogram(_ gram: Double) -> Double {
+        return gram * 0.001
     }
     
-    func gramToPound(_ gram: Int) -> Double {
-        return Double(gram) * 0.0022046226
+    func gramToPound(_ gram: Double) -> Double {
+        return gram * 0.0022046226
     }
     
-    func gramToOunce(_ gram: Int) -> Double {
-        return Double(gram) * 0.0352739619
+    func gramToOunce(_ gram: Double) -> Double {
+        return gram * 0.0352739619
     }
     
     //MARK: Convert Kilogram
     
-    func kilogramToGram(_ kilogram: Int) -> Int {
+    func kilogramToGram(_ kilogram: Double) -> Double {
         return kilogram * 1000
     }
     
-    func kilogramToPound(_ kilogram: Int) -> Double {
-        return Double(kilogram) * 2.2046226218
+    func kilogramToPound(_ kilogram: Double) -> Double {
+        return kilogram * 2.2046226218
     }
     
-    func kilogramToOunce(_ kilogram: Int) -> Double {
-        return Double(kilogram) * 35.2739619496
+    func kilogramToOunce(_ kilogram: Double) -> Double {
+        return kilogram * 35.2739619496
     }
     
     //MARK: Convert Pound
     
-    func poundToGram(_ pound: Int) -> Double {
-        return Double(pound) * 453.59237
+    func poundToGram(_ pound: Double) -> Double {
+        return pound * 453.59237
     }
     
-    func poundToKilogram(_ pound: Int) -> Double {
-        return Double(pound) * 0.45359237
+    func poundToKilogram(_ pound: Double) -> Double {
+        return pound * 0.45359237
     }
     
-    func poundToOunce(_ pound: Int) -> Int {
+    func poundToOunce(_ pound: Double) -> Double {
         return pound * 16
     }
     
     //MARK: Convert Ounce
     
-    func ounceToGram(_ ounce: Int) -> Double {
-        return Double(ounce) * 28.349523125
+    func ounceToGram(_ ounce: Double) -> Double {
+        return ounce * 28.349523125
     }
     
-    func ounceToKilogram(_ ounce: Int) -> Double {
-        return Double(ounce) * 0.0283495231
+    func ounceToKilogram(_ ounce: Double) -> Double {
+        return ounce * 0.0283495231
     }
     
-    func ounceToPound(_ ounce: Int) -> Double {
-        return Double(ounce) * 0.0625
+    func ounceToPound(_ ounce: Double) -> Double {
+        return ounce * 0.0625
     }
 }

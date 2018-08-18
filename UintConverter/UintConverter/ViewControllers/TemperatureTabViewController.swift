@@ -51,7 +51,7 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onCelsiusValueChanged(_ sender: UITextField) {
-        if let celsiusValue = Int(celsiusTextField.text!) {
+        if let celsiusValue = Double(celsiusTextField.text!) {
             setFehrenheitText(temperatureUtil.celsiusToFehrenheit(celsiusValue))
             setKelvinText(temperatureUtil.celsiusToKelvin(celsiusValue))
         } else {
@@ -60,7 +60,7 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onFehrenheitValueChanged(_ sender: UITextField) {
-        if let fehrenheitValue = Int(fehrenheitTextField.text!) {
+        if let fehrenheitValue = Double(fehrenheitTextField.text!) {
             setCelsiusText(temperatureUtil.fehrenheitToCelsius(fehrenheitValue))
             setKelvinText(temperatureUtil.fehrenheitToKelvin(fehrenheitValue))
         } else {
@@ -69,7 +69,7 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onKelvinValueChanged(_ sender: UITextField) {
-        if let kelvinValue = Int(kelvinTextField.text!) {
+        if let kelvinValue = Double(kelvinTextField.text!) {
             setCelsiusText(temperatureUtil.kelvinToCelsius(kelvinValue))
             setFehrenheitText(temperatureUtil.kelvinToFehrenheit(kelvinValue))
         } else {

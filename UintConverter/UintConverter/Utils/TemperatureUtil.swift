@@ -12,33 +12,31 @@ class TemperatureUtil {
     
     //MARK: Convert Celsius
     
-    func celsiusToFehrenheit(_ celsius: Int) -> Double {
-        return (Double(celsius) * 9.0/5.0) + 32
+    func celsiusToFehrenheit(_ celsius: Double) -> Double {
+        return (celsius * 9.0/5.0) + 32
     }
     
-    func celsiusToKelvin(_ celsius: Int) -> Double {
-        return Double(celsius) + 273.15
+    func celsiusToKelvin(_ celsius: Double) -> Double {
+        return celsius + 273.15
     }
     
     //MARK: Convert Fehrenheit
     
-    func fehrenheitToCelsius(_ fehrenheit: Int) -> Double {
-        return Double(fehrenheit - 32) * 5.0/9.0
+    func fehrenheitToCelsius(_ fehrenheit: Double) -> Double {
+        return (fehrenheit - Double(32)) * 5.0/9.0
     }
     
-    func fehrenheitToKelvin(_ fehrenheit: Int) -> Double {
-        return (Double(fehrenheit) + 459.67) * 5.0/9.0
+    func fehrenheitToKelvin(_ fehrenheit: Double) -> Double {
+        return (fehrenheit + 459.67) * 5.0/9.0
     }
     
     //MARK: Convert Kelvin
     
-    func kelvinToCelsius(_ kelvin: Int) -> Double {
-        return Double(kelvin) - 273.15
+    func kelvinToCelsius(_ kelvin: Double) -> Double {
+        return kelvin - 273.15
     }
     
-    func kelvinToFehrenheit(_ kelvin: Int) -> Double {
-        return (Double(kelvin) * 9.0/5.0) - 459.67
+    func kelvinToFehrenheit(_ kelvin: Double) -> Double {
+        return (kelvin * 9.0/5.0) - 459.67
     }
-    
-    
 }

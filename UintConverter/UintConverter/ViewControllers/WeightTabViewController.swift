@@ -58,7 +58,7 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onGramValueChanged(_ sender: UITextField) {
-        if let gramValue = Int(gramTextField.text!) {
+        if let gramValue = Double(gramTextField.text!) {
             setKgText(weightUtil.gramToKilogram(gramValue))
             setPoundText(weightUtil.gramToPound(gramValue))
             setOunceText(weightUtil.gramToOunce(gramValue))
@@ -68,7 +68,7 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onKgValueChanged(_ sender: UITextField) {
-        if let kgValue = Int(kgTextField.text!) {
+        if let kgValue = Double(kgTextField.text!) {
             setGramText(weightUtil.kilogramToGram(kgValue))
             setPoundText(weightUtil.kilogramToPound(kgValue))
             setOunceText(weightUtil.kilogramToOunce(kgValue))
@@ -78,7 +78,7 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onPoundValueChanged(_ sender: UITextField) {
-        if let poundValue = Int(poundTextField.text!) {
+        if let poundValue = Double(poundTextField.text!) {
             setGramText(weightUtil.poundToGram(poundValue))
             setKgText(weightUtil.poundToKilogram(poundValue))
             setOunceText(weightUtil.poundToOunce(poundValue))
@@ -88,7 +88,7 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func onOunceValueChanged(_ sender: UITextField) {
-        if let ounceValue = Int(ounceTextField.text!) {
+        if let ounceValue = Double(ounceTextField.text!) {
             setGramText(weightUtil.ounceToGram(ounceValue))
             setKgText(weightUtil.ounceToKilogram(ounceValue))
             setPoundText(weightUtil.ounceToPound(ounceValue))
