@@ -66,6 +66,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="onFpmValueChanged:" destination="AFL-G1-yhO" eventType="editingChanged" id="LCL-OX-BDr"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGv-7Z-wuV">
                                 <rect key="frame" x="185" y="269" width="160" height="30"/>

@@ -20,3 +20,13 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+extension UITextField {
+    func clear() {
+        self.text = ""
+    }
+    
+    func setText(_ value:Any){
+        self.text = "\(value)"
+    }
+}

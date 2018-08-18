@@ -31,31 +31,31 @@ class DistanceTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func clearTextFields() {
-        metreTextField.text = ""
-        footTextfield.text = ""
-        yardTextField.text = ""
-        kmTextField.text = ""
-        mileTextField.text = ""
+        metreTextField.clear()
+        footTextfield.clear()
+        yardTextField.clear()
+        kmTextField.clear()
+        mileTextField.clear()
     }
     
     private func setMetreText(_ value:Any){
-        metreTextField.text = "\(value)"
+        metreTextField.setText(value)
     }
     
     private func setFootText(_ value:Any){
-        footTextfield.text = "\(value)"
+        footTextfield.setText(value)
     }
     
     private func setYardText(_ value:Any){
-        yardTextField.text = "\(value)"
+        yardTextField.setText(value)
     }
     
     private func setKmText(_ value:Any){
-        kmTextField.text = "\(value)"
+        kmTextField.setText(value)
     }
     
     private func setMileText(_ value:Any){
-        mileTextField.text = "\(value)"
+        mileTextField.setText(value)
     }
     
     //MARK: UITextField Editing Changed Events

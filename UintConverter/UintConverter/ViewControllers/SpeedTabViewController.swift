@@ -29,22 +29,22 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func clearTextFields() {
-        mpsTextField.text = ""
-        fpmTextField.text = ""
-        kmph.text = ""
-        mphTextField.text = ""
+        mpsTextField.clear()
+        fpmTextField.clear()
+        kmph.clear()
+        mphTextField.clear()
     }
     
     private func setMpsText(_ value:Any){
-        mpsTextField.text = "\(value)"
+        mpsTextField.setText(value)
     }
     
     private func setFpsText(_ value:Any){
-        fpmTextField.text = "\(value)"
+        fpmTextField.setText(value)
     }
     
     private func setKmphText(_ value:Any){
-        kmph.text = "\(value)"
+        kmph.setText(value)
     }
     
     private func setMphText(_ value:Any){

@@ -29,26 +29,26 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func clearTextFields() {
-        gramTextField.text = ""
-        kgTextField.text = ""
-        poundTextField.text = ""
-        ounceTextField.text = ""
+        gramTextField.clear()
+        kgTextField.clear()
+        poundTextField.clear()
+        ounceTextField.clear()
     }
     
     private func setGramText(_ value:Any){
-        gramTextField.text = "\(value)"
+        gramTextField.setText(value)
     }
     
     private func setKgText(_ value:Any){
-        kgTextField.text = "\(value)"
+        kgTextField.setText(value)
     }
     
     private func setPoundText(_ value:Any){
-        poundTextField.text = "\(value)"
+        poundTextField.setText(value)
     }
     
     private func setOunceText(_ value:Any){
-        ounceTextField.text = "\(value)"
+        ounceTextField.setText(value)
     }
     
     //MARK: UITextField Editing Changed Events

@@ -27,21 +27,21 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func clearTextFields() {
-        celsiusTextField.text = ""
-        fehrenheitTextField.text = ""
-        kelvinTextField.text = ""
+        celsiusTextField.clear()
+        fehrenheitTextField.clear()
+        kelvinTextField.clear()
     }
     
     private func setCelsiusText(_ value:Any){
-        celsiusTextField.text = "\(value)"
+        celsiusTextField.setText(value)
     }
     
     private func setFehrenheitText(_ value:Any){
-        fehrenheitTextField.text = "\(value)"
+        fehrenheitTextField.setText(value)
     }
     
     private func setKelvinText(_ value:Any){
-        kelvinTextField.text = "\(value)"
+        kelvinTextField.setText(value)
     }
     
     //MARK: UITextField Editing Changed Events
