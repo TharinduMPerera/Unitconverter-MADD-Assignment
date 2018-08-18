@@ -15,7 +15,7 @@ class DistanceTabViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var yardTextField: UITextField!
     @IBOutlet weak var kmTextField: UITextField!
     @IBOutlet weak var mileTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -88,5 +88,6 @@ class DistanceTabViewController: UIViewController, UITextFieldDelegate {
             currentString.replacingCharacters(in: range, with: string) as NSString
         return newString.length <= maxLength
     }
-
+    
 }
+

@@ -14,7 +14,7 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var fpsTextField: UITextField!
     @IBOutlet weak var kmph: UITextField!
     @IBOutlet weak var mphTextField: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -79,5 +79,6 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
             currentString.replacingCharacters(in: range, with: string) as NSString
         return newString.length <= maxLength
     }
-
+    
 }
+
