@@ -58,8 +58,6 @@
 			children = (
 				81C689282128330500B29179 /* TemperatureUtil.swift */,
 				8136568D2127E0950045A996 /* WeightUtil.swift */,
-				8132FADD21273860000CA227 /* Extensions.swift */,
-				813656912127F5870045A996 /* Const.swift */,
 				81C6892A21283B7C00B29179 /* SpeedUtil.swift */,
 				81C6892C2128491C00B29179 /* DistanceUtil.swift */,
 			);
@@ -75,6 +73,15 @@
 				8132FAD721272FA2000CA227 /* SpeedTabViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		81C77EFA212869CD007D0792 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8132FADD21273860000CA227 /* Extensions.swift */,
+				813656912127F5870045A996 /* Const.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		81FFA82921248D3800E1380E = {
@@ -97,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				813656902127E3490045A996 /* ViewControllers */,
+				81C77EFA212869CD007D0792 /* Helpers */,
 				8136568F2127E32A0045A996 /* Utils */,
 				81FFA83521248D3800E1380E /* AppDelegate.swift */,
 				81FFA83921248D3800E1380E /* Main.storyboard */,
