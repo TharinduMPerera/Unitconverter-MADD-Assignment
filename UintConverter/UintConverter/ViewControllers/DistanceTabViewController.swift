@@ -61,18 +61,58 @@ class DistanceTabViewController: UIViewController, UITextFieldDelegate {
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onMetreValueChanged(_ sender: UITextField) {
+        if let metreValue = Double(metreTextField.text!) {
+            setFootText(DistanceUtil.metreToFoot(metreValue))
+            setYardText(DistanceUtil.metreToYard(metreValue))
+            setKmText(DistanceUtil.metreToKilometre(metreValue))
+            setMileText(DistanceUtil.metreToMile(metreValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onFootValueChanged(_ sender: UITextField) {
+        if let footValue = Double(footTextfield.text!) {
+            setMetreText(DistanceUtil.footToMetre(footValue))
+            setYardText(DistanceUtil.footToYard(footValue))
+            setKmText(DistanceUtil.footToKilometre(footValue))
+            setMileText(DistanceUtil.footToMile(footValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onYardValueChanged(_ sender: UITextField) {
+        if let yardValue = Double(yardTextField.text!) {
+            setMetreText(DistanceUtil.yardToMetre(yardValue))
+            setFootText(DistanceUtil.yardToFoot(yardValue))
+            setKmText(DistanceUtil.yardToKilometre(yardValue))
+            setMileText(DistanceUtil.yardToMile(yardValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onKmValueChanged(_ sender: UITextField) {
+        if let kmValue = Double(kmTextField.text!) {
+            setMetreText(DistanceUtil.kilometreToMetre(kmValue))
+            setFootText(DistanceUtil.kilometreToFoot(kmValue))
+            setYardText(DistanceUtil.kilometreToYard(kmValue))
+            setMileText(DistanceUtil.kilometreToMile(kmValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onMileValueChanged(_ sender: UITextField) {
+        if let mileValue = Double(mileTextField.text!) {
+            setMetreText(DistanceUtil.mileToMetre(mileValue))
+            setFootText(DistanceUtil.mileToFoot(mileValue))
+            setYardText(DistanceUtil.mileToYard(mileValue))
+            setKmText(DistanceUtil.metreToKilometre(mileValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     //MARK: UITextFieldDelegate

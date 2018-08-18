@@ -16,6 +16,7 @@
 		813656922127F5870045A996 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656912127F5870045A996 /* Const.swift */; };
 		81C689292128330500B29179 /* TemperatureUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C689282128330500B29179 /* TemperatureUtil.swift */; };
 		81C6892B21283B7C00B29179 /* SpeedUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6892A21283B7C00B29179 /* SpeedUtil.swift */; };
+		81C6892D2128491C00B29179 /* DistanceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C6892C2128491C00B29179 /* DistanceUtil.swift */; };
 		81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFA83521248D3800E1380E /* AppDelegate.swift */; };
 		81FFA83B21248D3800E1380E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83921248D3800E1380E /* Main.storyboard */; };
 		81FFA83D21248D3900E1380E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83C21248D3900E1380E /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		813656912127F5870045A996 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		81C689282128330500B29179 /* TemperatureUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureUtil.swift; sourceTree = "<group>"; };
 		81C6892A21283B7C00B29179 /* SpeedUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedUtil.swift; sourceTree = "<group>"; };
+		81C6892C2128491C00B29179 /* DistanceUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceUtil.swift; sourceTree = "<group>"; };
 		81FFA83221248D3800E1380E /* UintConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UintConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FFA83521248D3800E1380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FFA83A21248D3800E1380E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				8132FADD21273860000CA227 /* Extensions.swift */,
 				813656912127F5870045A996 /* Const.swift */,
 				81C6892A21283B7C00B29179 /* SpeedUtil.swift */,
+				81C6892C2128491C00B29179 /* DistanceUtil.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81C6892D2128491C00B29179 /* DistanceUtil.swift in Sources */,
 				8132FAD221272F66000CA227 /* WeightTabViewController.swift in Sources */,
 				8132FADE21273860000CA227 /* Extensions.swift in Sources */,
 				8132FAD421272F84000CA227 /* TemperatureTabViewController.swift in Sources */,
