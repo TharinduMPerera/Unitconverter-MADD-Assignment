@@ -14,11 +14,14 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var fehrenheitTextField: UITextField!
     @IBOutlet weak var kelvinTextField: UITextField!
     
+    private var temperatureUtil: TemperatureUtil!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         self.initDelegates()
+        
+        temperatureUtil = TemperatureUtil()
     }
     
     private func initDelegates() {
@@ -48,12 +51,30 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onCelsiusValueChanged(_ sender: UITextField) {
+        if let celsiusValue = Int(celsiusTextField.text!) {
+            setFehrenheitText(temperatureUtil.celsiusToFehrenheit(celsiusValue))
+            setKelvinText(temperatureUtil.celsiusToKelvin(celsiusValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onFehrenheitValueChanged(_ sender: UITextField) {
+        if let fehrenheitValue = Int(fehrenheitTextField.text!) {
+            setCelsiusText(temperatureUtil.fehrenheitToCelsius(fehrenheitValue))
+            setKelvinText(temperatureUtil.fehrenheitToKelvin(fehrenheitValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onKelvinValueChanged(_ sender: UITextField) {
+        if let kelvinValue = Int(kelvinTextField.text!) {
+            setCelsiusText(temperatureUtil.kelvinToCelsius(kelvinValue))
+            setFehrenheitText(temperatureUtil.kelvinToFehrenheit(kelvinValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     //MARK: UITextFieldDelegate

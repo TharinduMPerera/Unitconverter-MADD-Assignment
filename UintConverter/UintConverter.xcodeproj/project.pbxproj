@@ -14,6 +14,7 @@
 		8132FADE21273860000CA227 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8132FADD21273860000CA227 /* Extensions.swift */; };
 		8136568E2127E0950045A996 /* WeightUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8136568D2127E0950045A996 /* WeightUtil.swift */; };
 		813656922127F5870045A996 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813656912127F5870045A996 /* Const.swift */; };
+		81C689292128330500B29179 /* TemperatureUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C689282128330500B29179 /* TemperatureUtil.swift */; };
 		81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFA83521248D3800E1380E /* AppDelegate.swift */; };
 		81FFA83B21248D3800E1380E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83921248D3800E1380E /* Main.storyboard */; };
 		81FFA83D21248D3900E1380E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81FFA83C21248D3900E1380E /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 		8132FADD21273860000CA227 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		8136568D2127E0950045A996 /* WeightUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightUtil.swift; sourceTree = "<group>"; };
 		813656912127F5870045A996 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		81C689282128330500B29179 /* TemperatureUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureUtil.swift; sourceTree = "<group>"; };
 		81FFA83221248D3800E1380E /* UintConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UintConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FFA83521248D3800E1380E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81FFA83A21248D3800E1380E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		8136568F2127E32A0045A996 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				81C689282128330500B29179 /* TemperatureUtil.swift */,
 				8136568D2127E0950045A996 /* WeightUtil.swift */,
 				8132FADD21273860000CA227 /* Extensions.swift */,
 				813656912127F5870045A996 /* Const.swift */,
@@ -173,6 +176,7 @@
 				8132FADE21273860000CA227 /* Extensions.swift in Sources */,
 				8132FAD421272F84000CA227 /* TemperatureTabViewController.swift in Sources */,
 				8136568E2127E0950045A996 /* WeightUtil.swift in Sources */,
+				81C689292128330500B29179 /* TemperatureUtil.swift in Sources */,
 				81FFA83621248D3800E1380E /* AppDelegate.swift in Sources */,
 				813656922127F5870045A996 /* Const.swift in Sources */,
 				8132FAD821272FA2000CA227 /* SpeedTabViewController.swift in Sources */,
