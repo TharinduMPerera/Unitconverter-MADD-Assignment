@@ -9,6 +9,11 @@
 import UIKit
 
 class SpeedTabViewController: UIViewController {
+    
+    @IBOutlet weak var mpsTextField: UITextField!
+    @IBOutlet weak var fpsTextField: UITextField!
+    @IBOutlet weak var kmph: UITextField!
+    @IBOutlet weak var mphTextField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()

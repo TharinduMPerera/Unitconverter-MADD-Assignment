@@ -9,6 +9,11 @@
 import UIKit
 
 class TemperatureTabViewController: UIViewController {
+    
+    @IBOutlet weak var celsiusTextField: UITextField!
+    @IBOutlet weak var fehrenheitTextField: UITextField!
+    @IBOutlet weak var kelvinTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

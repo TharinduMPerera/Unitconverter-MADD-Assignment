@@ -124,6 +124,12 @@
                         <viewLayoutGuide key="safeArea" id="Ilp-ao-OtM"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Speed" image="unitSpeed" id="9ak-jR-4lB"/>
+                    <connections>
+                        <outlet property="fpsTextField" destination="Dl1-3z-Gdu" id="Y65-Dl-q4O"/>
+                        <outlet property="kmph" destination="gGv-7Z-wuV" id="vJ9-q8-GAY"/>
+                        <outlet property="mphTextField" destination="kqk-8j-ZsA" id="uLV-Lu-L5v"/>
+                        <outlet property="mpsTextField" destination="Riu-sy-WEA" id="9jS-ch-afA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yO2-zp-xTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +230,11 @@
                         <viewLayoutGuide key="safeArea" id="cBz-ZL-5Bj"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Temperature" image="unitTemperature" id="TeQ-jo-37Z"/>
+                    <connections>
+                        <outlet property="celsiusTextField" destination="dnr-RD-unO" id="g8e-Hp-aq4"/>
+                        <outlet property="fehrenheitTextField" destination="Knq-ht-OA9" id="tFq-E3-eH6"/>
+                        <outlet property="kelvinTextField" destination="Wwt-M8-S7n" id="zJb-0e-nJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eNJ-dT-cLv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -364,6 +375,13 @@
                         <viewLayoutGuide key="safeArea" id="OBc-mM-XJN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Distance" image="unitLength" selectedImage="unitLength" id="D2h-Qp-cK5"/>
+                    <connections>
+                        <outlet property="footTextfield" destination="mer-2o-4qe" id="mo7-15-LVL"/>
+                        <outlet property="kmTextField" destination="aZ2-KH-tB0" id="zPJ-Dw-MxX"/>
+                        <outlet property="metreTextField" destination="6k9-Vs-sEl" id="0iw-A0-psS"/>
+                        <outlet property="mileTextField" destination="n0Z-dy-OOV" id="Q0I-HC-Xpy"/>
+                        <outlet property="yardTextField" destination="hQb-oB-axF" id="86a-Ir-LGS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0CD-rt-NJ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
