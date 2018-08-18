@@ -65,10 +65,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                <connections>
-                                    <action selector="onFpmValueChanged:" destination="AFL-G1-yhO" eventType="editingChanged" id="FQ3-2p-mgh"/>
-                                </connections>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gGv-7Z-wuV">
                                 <rect key="frame" x="185" y="269" width="160" height="30"/>
@@ -77,7 +74,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onKmphValueChanged:" destination="AFL-G1-yhO" eventType="editingChanged" id="r7r-DE-eRy"/>
                                 </connections>
@@ -89,7 +86,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onMphValueChanged:" destination="AFL-G1-yhO" eventType="editingChanged" id="w3n-qA-m0D"/>
                                 </connections>
@@ -101,7 +98,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onMpsValueChanged:" destination="AFL-G1-yhO" eventType="editingChanged" id="iv7-W1-IYo"/>
                                 </connections>
@@ -137,7 +134,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Speed" image="unitSpeed" id="9ak-jR-4lB"/>
                     <connections>
-                        <outlet property="fpsTextField" destination="Dl1-3z-Gdu" id="Y65-Dl-q4O"/>
+                        <outlet property="fpmTextField" destination="Dl1-3z-Gdu" id="ROr-FJ-fEn"/>
                         <outlet property="kmph" destination="gGv-7Z-wuV" id="vJ9-q8-GAY"/>
                         <outlet property="mphTextField" destination="kqk-8j-ZsA" id="uLV-Lu-L5v"/>
                         <outlet property="mpsTextField" destination="Riu-sy-WEA" id="9jS-ch-afA"/>
@@ -197,7 +194,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onFehrenheitValueChanged:" destination="tvq-y2-kVp" eventType="editingChanged" id="BN1-bW-DQL"/>
                                 </connections>
@@ -209,7 +206,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onKelvinValueChanged:" destination="tvq-y2-kVp" eventType="editingChanged" id="EhB-4v-bv7"/>
                                 </connections>
@@ -221,7 +218,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onCelsiusValueChanged:" destination="tvq-y2-kVp" eventType="editingChanged" id="54V-aS-I0u"/>
                                 </connections>
@@ -317,7 +314,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onFootValueChanged:" destination="Lzm-Ah-2Vc" eventType="editingChanged" id="2Cz-yi-0jg"/>
                                 </connections>
@@ -329,7 +326,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onYardValueChanged:" destination="Lzm-Ah-2Vc" eventType="editingChanged" id="epW-HA-xsi"/>
                                 </connections>
@@ -341,7 +338,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onKmValueChanged:" destination="Lzm-Ah-2Vc" eventType="editingChanged" id="5Vb-WN-yT9"/>
                                 </connections>
@@ -353,7 +350,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onMetreValueChanged:" destination="Lzm-Ah-2Vc" eventType="editingChanged" id="zgX-yR-0qz"/>
                                 </connections>
@@ -371,7 +368,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onMileValueChanged:" destination="Lzm-Ah-2Vc" eventType="editingChanged" id="LNd-Y6-Zad"/>
                                 </connections>
@@ -479,7 +476,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onKgValueChanged:" destination="CcH-yb-9Wy" eventType="editingChanged" id="TyY-Bm-dIT"/>
                                 </connections>
@@ -491,7 +488,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onPoundValueChanged:" destination="CcH-yb-9Wy" eventType="editingChanged" id="ooA-al-MIe"/>
                                 </connections>
@@ -503,7 +500,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onOunceValueChanged:" destination="CcH-yb-9Wy" eventType="editingChanged" id="6Kw-PA-9GU"/>
                                 </connections>
@@ -515,7 +512,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onGramValueChanged:" destination="CcH-yb-9Wy" eventType="editingChanged" id="OqE-sQ-YxJ"/>
                                 </connections>
