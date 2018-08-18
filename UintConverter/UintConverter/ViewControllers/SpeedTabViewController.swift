@@ -35,6 +35,22 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
         mphTextField.text = ""
     }
     
+    private func setMpsText(_ value:Any){
+        mpsTextField.text = "\(value)"
+    }
+    
+    private func setFpsText(_ value:Any){
+        fpsTextField.text = "\(value)"
+    }
+    
+    private func setKmphText(_ value:Any){
+        kmph.text = "\(value)"
+    }
+    
+    private func setMphText(_ value:Any){
+        mphTextField.text = "\(value)"
+    }
+    
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onMpsValueChanged(_ sender: UITextField) {

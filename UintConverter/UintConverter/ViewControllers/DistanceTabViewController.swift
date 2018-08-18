@@ -38,6 +38,26 @@ class DistanceTabViewController: UIViewController, UITextFieldDelegate {
         mileTextField.text = ""
     }
     
+    private func setMetreText(_ value:Any){
+        metreTextField.text = "\(value)"
+    }
+    
+    private func setFootText(_ value:Any){
+        footTextfield.text = "\(value)"
+    }
+    
+    private func setYardText(_ value:Any){
+        yardTextField.text = "\(value)"
+    }
+    
+    private func setKmText(_ value:Any){
+        kmTextField.text = "\(value)"
+    }
+    
+    private func setMileText(_ value:Any){
+        mileTextField.text = "\(value)"
+    }
+    
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onMetreValueChanged(_ sender: UITextField) {

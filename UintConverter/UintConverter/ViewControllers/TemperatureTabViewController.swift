@@ -33,6 +33,18 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
         kelvinTextField.text = ""
     }
     
+    private func setCelsiusText(_ value:Any){
+        celsiusTextField.text = "\(value)"
+    }
+    
+    private func setFehrenheitText(_ value:Any){
+        fehrenheitTextField.text = "\(value)"
+    }
+    
+    private func setKelvinText(_ value:Any){
+        kelvinTextField.text = "\(value)"
+    }
+    
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onCelsiusValueChanged(_ sender: UITextField) {
