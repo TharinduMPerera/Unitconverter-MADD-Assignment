@@ -15,14 +15,10 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var poundTextField: UITextField!
     @IBOutlet weak var ounceTextField: UITextField!
     
-    private var weightUtil: WeightUtil!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         self.initDelegates()
-        
-        self.weightUtil = WeightUtil()
     }
     
     private func initDelegates() {
@@ -59,9 +55,9 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onGramValueChanged(_ sender: UITextField) {
         if let gramValue = Double(gramTextField.text!) {
-            setKgText(weightUtil.gramToKilogram(gramValue))
-            setPoundText(weightUtil.gramToPound(gramValue))
-            setOunceText(weightUtil.gramToOunce(gramValue))
+            setKgText(WeightUtil.gramToKilogram(gramValue))
+            setPoundText(WeightUtil.gramToPound(gramValue))
+            setOunceText(WeightUtil.gramToOunce(gramValue))
         } else {
             clearTextFields()
         }
@@ -69,9 +65,9 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onKgValueChanged(_ sender: UITextField) {
         if let kgValue = Double(kgTextField.text!) {
-            setGramText(weightUtil.kilogramToGram(kgValue))
-            setPoundText(weightUtil.kilogramToPound(kgValue))
-            setOunceText(weightUtil.kilogramToOunce(kgValue))
+            setGramText(WeightUtil.kilogramToGram(kgValue))
+            setPoundText(WeightUtil.kilogramToPound(kgValue))
+            setOunceText(WeightUtil.kilogramToOunce(kgValue))
         } else {
             clearTextFields()
         }
@@ -79,9 +75,9 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onPoundValueChanged(_ sender: UITextField) {
         if let poundValue = Double(poundTextField.text!) {
-            setGramText(weightUtil.poundToGram(poundValue))
-            setKgText(weightUtil.poundToKilogram(poundValue))
-            setOunceText(weightUtil.poundToOunce(poundValue))
+            setGramText(WeightUtil.poundToGram(poundValue))
+            setKgText(WeightUtil.poundToKilogram(poundValue))
+            setOunceText(WeightUtil.poundToOunce(poundValue))
         } else {
             clearTextFields()
         }
@@ -89,9 +85,9 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onOunceValueChanged(_ sender: UITextField) {
         if let ounceValue = Double(ounceTextField.text!) {
-            setGramText(weightUtil.ounceToGram(ounceValue))
-            setKgText(weightUtil.ounceToKilogram(ounceValue))
-            setPoundText(weightUtil.ounceToPound(ounceValue))
+            setGramText(WeightUtil.ounceToGram(ounceValue))
+            setKgText(WeightUtil.ounceToKilogram(ounceValue))
+            setPoundText(WeightUtil.ounceToPound(ounceValue))
         } else {
             clearTextFields()
         }

@@ -14,14 +14,10 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var fehrenheitTextField: UITextField!
     @IBOutlet weak var kelvinTextField: UITextField!
     
-    private var temperatureUtil: TemperatureUtil!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         self.initDelegates()
-        
-        temperatureUtil = TemperatureUtil()
     }
     
     private func initDelegates() {
@@ -52,8 +48,8 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onCelsiusValueChanged(_ sender: UITextField) {
         if let celsiusValue = Double(celsiusTextField.text!) {
-            setFehrenheitText(temperatureUtil.celsiusToFehrenheit(celsiusValue))
-            setKelvinText(temperatureUtil.celsiusToKelvin(celsiusValue))
+            setFehrenheitText(TemperatureUtil.celsiusToFehrenheit(celsiusValue))
+            setKelvinText(TemperatureUtil.celsiusToKelvin(celsiusValue))
         } else {
             clearTextFields()
         }
@@ -61,8 +57,8 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onFehrenheitValueChanged(_ sender: UITextField) {
         if let fehrenheitValue = Double(fehrenheitTextField.text!) {
-            setCelsiusText(temperatureUtil.fehrenheitToCelsius(fehrenheitValue))
-            setKelvinText(temperatureUtil.fehrenheitToKelvin(fehrenheitValue))
+            setCelsiusText(TemperatureUtil.fehrenheitToCelsius(fehrenheitValue))
+            setKelvinText(TemperatureUtil.fehrenheitToKelvin(fehrenheitValue))
         } else {
             clearTextFields()
         }
@@ -70,8 +66,8 @@ class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func onKelvinValueChanged(_ sender: UITextField) {
         if let kelvinValue = Double(kelvinTextField.text!) {
-            setCelsiusText(temperatureUtil.kelvinToCelsius(kelvinValue))
-            setFehrenheitText(temperatureUtil.kelvinToFehrenheit(kelvinValue))
+            setCelsiusText(TemperatureUtil.kelvinToCelsius(kelvinValue))
+            setFehrenheitText(TemperatureUtil.kelvinToFehrenheit(kelvinValue))
         } else {
             clearTextFields()
         }
