@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DistanceTabViewController: UIViewController {
+class DistanceTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var metreTextField: UITextField!
     @IBOutlet weak var footTextfield: UITextField!
@@ -19,6 +19,46 @@ class DistanceTabViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.initDelegates()
+    }
+    
+    private func initDelegates(){
+        metreTextField.delegate = self
+        footTextfield.delegate = self
+        yardTextField.delegate = self
+        kmTextField.delegate = self
+        mileTextField.delegate = self
+    }
+    
+    private func clearTextFields(){
+        metreTextField.text = ""
+        footTextfield.text = ""
+        yardTextField.text = ""
+        kmTextField.text = ""
+        mileTextField.text = ""
+    }
+    
+    //MARK: UITextField Editing Changed Events
+    
+    @IBAction func onMetreValueChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func onFootValueChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func onYardValueChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func onKmValueChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func onMileValueChanged(_ sender: UITextField) {
+    }
+    
+    //MARK: UITextFieldDelegate
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        clearTextFields()
     }
 
 }

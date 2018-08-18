@@ -57,6 +57,5 @@ class WeightTabViewController: UIViewController, UITextFieldDelegate {
         clearTextFields()
     }
     
-    
 }
 

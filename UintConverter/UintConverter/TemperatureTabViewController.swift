@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TemperatureTabViewController: UIViewController {
+class TemperatureTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var celsiusTextField: UITextField!
     @IBOutlet weak var fehrenheitTextField: UITextField!
@@ -18,6 +18,36 @@ class TemperatureTabViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
+        self.initDelegates()
     }
 
+    private func initDelegates(){
+        celsiusTextField.delegate = self
+        fehrenheitTextField.delegate = self
+        kelvinTextField.delegate = self
+    }
+    
+    private func clearTextFields(){
+        celsiusTextField.text = ""
+        fehrenheitTextField.text = ""
+        kelvinTextField.text = ""
+    }
+    
+    //MARK: UITextField Editing Changed Events
+    
+    @IBAction func onCelsiusValueChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func onFehrenheitValueChanged(_ sender: UITextField) {
+    }
+    
+    @IBAction func onKelvinValueChanged(_ sender: UITextField) {
+    }
+    
+    //MARK: UITextFieldDelegate
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        clearTextFields()
+    }
+    
 }
