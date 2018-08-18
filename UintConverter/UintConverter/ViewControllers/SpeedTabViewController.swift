@@ -11,7 +11,7 @@ import UIKit
 class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var mpsTextField: UITextField!
-    @IBOutlet weak var fpsTextField: UITextField!
+    @IBOutlet weak var fpmTextField: UITextField!
     @IBOutlet weak var kmph: UITextField!
     @IBOutlet weak var mphTextField: UITextField!
     
@@ -23,14 +23,14 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     
     private func initDelegates() {
         mpsTextField.delegate = self
-        fpsTextField.delegate = self
+        fpmTextField.delegate = self
         kmph.delegate = self
         mphTextField.delegate = self
     }
     
     private func clearTextFields() {
         mpsTextField.text = ""
-        fpsTextField.text = ""
+        fpmTextField.text = ""
         kmph.text = ""
         mphTextField.text = ""
     }
@@ -40,7 +40,7 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func setFpsText(_ value:Any){
-        fpsTextField.text = "\(value)"
+        fpmTextField.text = "\(value)"
     }
     
     private func setKmphText(_ value:Any){
