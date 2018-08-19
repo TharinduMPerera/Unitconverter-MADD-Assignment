@@ -138,7 +138,7 @@
                     <tabBarItem key="tabBarItem" title="Speed" image="unitSpeed" id="9ak-jR-4lB"/>
                     <connections>
                         <outlet property="fpmTextField" destination="Dl1-3z-Gdu" id="ROr-FJ-fEn"/>
-                        <outlet property="kmph" destination="gGv-7Z-wuV" id="vJ9-q8-GAY"/>
+                        <outlet property="kmphTextField" destination="gGv-7Z-wuV" id="xIQ-Wf-PjX"/>
                         <outlet property="mphTextField" destination="kqk-8j-ZsA" id="uLV-Lu-L5v"/>
                         <outlet property="mpsTextField" destination="Riu-sy-WEA" id="9jS-ch-afA"/>
                     </connections>

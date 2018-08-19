@@ -12,7 +12,7 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var mpsTextField: UITextField!
     @IBOutlet weak var fpmTextField: UITextField!
-    @IBOutlet weak var kmph: UITextField!
+    @IBOutlet weak var kmphTextField: UITextField!
     @IBOutlet weak var mphTextField: UITextField!
     
     override func viewDidLoad() {
@@ -24,14 +24,14 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
     private func initDelegates() {
         mpsTextField.delegate = self
         fpmTextField.delegate = self
-        kmph.delegate = self
+        kmphTextField.delegate = self
         mphTextField.delegate = self
     }
     
     private func clearTextFields() {
         mpsTextField.clear()
         fpmTextField.clear()
-        kmph.clear()
+        kmphTextField.clear()
         mphTextField.clear()
     }
     
@@ -39,30 +39,58 @@ class SpeedTabViewController: UIViewController, UITextFieldDelegate {
         mpsTextField.setText(value)
     }
     
-    private func setFpsText(_ value:Any){
+    private func setFpmText(_ value:Any){
         fpmTextField.setText(value)
     }
     
     private func setKmphText(_ value:Any){
-        kmph.setText(value)
+        kmphTextField.setText(value)
     }
     
     private func setMphText(_ value:Any){
-        mphTextField.text = "\(value)"
+        mphTextField.setText(value)
     }
     
     //MARK: UITextField Editing Changed Events
     
     @IBAction func onMpsValueChanged(_ sender: UITextField) {
+        if let mpsValue = Double(mpsTextField.text!) {
+            setFpmText(SpeedUtil.mpsToFpm(mpsValue))
+            setKmphText(SpeedUtil.mpsToKmph(mpsValue))
+            setMphText(SpeedUtil.mpsToMph(mpsValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onFpmValueChanged(_ sender: UITextField) {
+        if let fmpValue = Double(fpmTextField.text!) {
+            setMpsText(SpeedUtil.fpmToMps(fmpValue))
+            setKmphText(SpeedUtil.fpmToKmph(fmpValue))
+            setMphText(SpeedUtil.fpmToMph(fmpValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onKmphValueChanged(_ sender: UITextField) {
+        if let kmphValue = Double(kmphTextField.text!) {
+            setMpsText(SpeedUtil.kmphToMps(kmphValue))
+            setFpmText(SpeedUtil.kmphToFpm(kmphValue))
+            setMphText(SpeedUtil.kmphToMph(kmphValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     @IBAction func onMphValueChanged(_ sender: UITextField) {
+        if let mphValue = Double(mphTextField.text!) {
+            setMpsText(SpeedUtil.mphToMps(mphValue))
+            setFpmText(SpeedUtil.mphToFpm(mphValue))
+            setKmphText(SpeedUtil.mphToKmph(mphValue))
+        } else {
+            clearTextFields()
+        }
     }
     
     
